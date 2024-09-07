@@ -81,7 +81,7 @@ class RecintosZoo {
         if (animaisNoRecinto.length > 0) {
             const existeOutraEspecie = animaisNoRecinto.some(animal => animal !== novoAnimal);
             if (existeOutraEspecie) {
-                espacoExtra = 1; // Espaço extra quando há mais de uma espécie no recinto
+                espacoExtra = 1;
             }
         }
 
@@ -104,7 +104,7 @@ class RecintosZoo {
     
         // Regra específica para o hipopótamo
         if (animal === 'HIPOPOTAMO' && biomaRecinto !== 'savana e rio') {
-            return false; // Hipopótamos só podem dividir recintos com outras espécies em "savana e rio"
+            return false; 
         }
     
         return true;
